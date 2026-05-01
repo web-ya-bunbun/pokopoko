@@ -36,8 +36,6 @@ ol {
 
 body {
   min-height: 100vh;
-  line-height: 1.5;
-  font-size: 1rem;
 }
 
 h1,
@@ -150,7 +148,7 @@ html {
 }
 
 body {
-  color: #000;
+  color: #310707;
   font-family: "Zen Maru Gothic", "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", "ヒラギノ丸ゴ Pro W4", "Hiragino Maru Gothic Pro", "Meiryo UI", "メイリオ", sans-serif;
   font-size: 1rem;
   line-height: 1.8;
@@ -159,7 +157,7 @@ body {
 
 /* link */
 a {
-  color: #000;
+  color: #310707;
   text-decoration: none;
 }
 
@@ -180,9 +178,9 @@ a {
   padding-left: 4vw;
   padding-right: 4vw;
 }
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 901px) {
   .inner {
-    max-width: 1320px;
+    max-width: 1440px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -208,6 +206,214 @@ a {
 /*--------------------
   module
 --------------------*/
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  z-index: 1;
+}
+@media screen and (max-width: 900px) {
+  .header {
+    height: 20vw;
+    padding: 2vw;
+  }
+}
+
+.headerLogo {
+  width: 36vw;
+}
+@media screen and (min-width: 901px) {
+  .headerLogo {
+    width: 180px;
+  }
+}
+.headerLogo > a {
+  display: block;
+}
+.headerLogo img {
+  width: 100%;
+}
+
+@media screen and (min-width: 901px) {
+  .menuCtrl {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .menuCtrl {
+    width: 15vw;
+    padding: 3vw;
+    background-color: #310707;
+    border-radius: 4px;
+    z-index: 1;
+  }
+  .menuCtrl input[type='checkbox'] {
+    display: none;
+  }
+  .menuCtrl input[type='checkbox']:checked + .menuCtrlBtn .menuCtrlLine {
+    transform-origin: center;
+  }
+  .menuCtrl input[type='checkbox']:checked + .menuCtrlBtn .menuCtrlLine:first-child, .menuCtrl input[type='checkbox']:checked + .menuCtrlBtn .menuCtrlLine:last-child {
+    opacity: 0;
+  }
+  .menuCtrl input[type='checkbox']:checked + .menuCtrlBtn .menuCtrlLine:nth-child(2) {
+    transform: rotate(45deg);
+  }
+  .menuCtrl input[type='checkbox']:checked + .menuCtrlBtn .menuCtrlLine:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+}
+
+.menuCtrlLine {
+  fill: #fff;
+  transition: all 0.3s;
+}
+
+.gnav {
+  display: flex;
+}
+@media screen and (max-width: 900px) {
+  .gnav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+  }
+}
+
+.gnavList {
+  display: flex;
+}
+@media screen and (max-width: 900px) {
+  .gnavList {
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5vw;
+    font-size: 3.5vw;
+  }
+}
+@media screen and (min-width: 901px) {
+  .gnavList {
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.gnavItem {
+  color: #310707;
+  font-weight: bold;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+}
+@media screen and (min-width: 901px) {
+  .footer {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 900px) {
+  .footer {
+    padding: 2vw;
+  }
+}
+
+.footerContents {
+  display: flex;
+}
+@media screen and (min-width: 901px) {
+  .footerContents {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 900px) {
+  .footerContents {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footerBlock01 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footerTitle {
+  font-weight: bold;
+}
+
+.footerSNS {
+  display: flex;
+  gap: 0.5rem;
+  padding-block: 0.5rem;
+}
+
+.footerSNSItem {
+  width: 1.5rem;
+}
+
+.footerNavi {
+  display: flex;
+  gap: 1rem;
+}
+@media screen and (max-width: 900px) {
+  .footerNavi {
+    flex-direction: column;
+    align-items: center;
+    padding-block: 1rem 2rem;
+  }
+}
+
+.footerNaviItem {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.footerCopy {
+  font-size: 0.6rem;
+  text-align: center;
+}
+
+.btn {
+  display: block;
+  padding: 0.8rem 1rem;
+  border-radius: 4px;
+  background-color: #FF840A;
+  color: #fff;
+  text-align: center;
+  line-height: 1;
+}
+@media screen and (min-width: 901px) {
+  .btn {
+    margin-left: 0.5rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .btn {
+    margin-top: 1.75vw;
+  }
+}
+
 /*--------------------
   toppage
 --------------------*/

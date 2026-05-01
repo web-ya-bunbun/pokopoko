@@ -3,3 +3,175 @@
 /*--------------------
   module
 --------------------*/
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: $white;
+  z-index: 1;
+  @include winSizeS {
+    height: 20vw;
+    padding: 2vw;
+  }
+}
+.headerLogo {
+  width: 36vw;
+  @include winSizeM {
+    width: 180px;
+  }
+  > a {
+    display: block;
+  }
+  img {
+    width: 100%;
+  }
+}
+.menuCtrl {
+  @include winSizeM {
+    display: none;
+  }
+  @include winSizeS {
+    width: 15vw;
+    padding: 3vw;
+    background-color: $textColor;
+    border-radius: 4px;
+    z-index: 1;
+    input[type='checkbox'] {
+      display: none;
+    }
+    input[type='checkbox']:checked {
+      + .menuCtrlBtn {
+        .menuCtrlLine {
+          transform-origin: center;
+          &:first-child,
+          &:last-child {
+            opacity: 0;
+          }
+          &:nth-child(2) {
+            transform: rotate(45deg);
+          }
+          &:nth-child(3) {
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+}
+.menuCtrlLine {
+  fill: $white;
+  transition: all 0.3s;
+}
+.gnav {
+  display: flex;
+  @include winSizeS {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    background-color: $white;
+  }
+}
+.gnavList {
+  display: flex;
+  @include winSizeS {
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5vw;
+    font-size: 3.5vw;
+  }
+  @include winSizeM {
+    align-items: center;
+    gap: 1rem;
+  }
+}
+.gnavItem {
+  color: $linkFontColor;
+  font-weight: bold;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  background-color: $white;
+  @include winSizeM {
+    align-items: center;
+  }
+  @include winSizeS {
+    padding: 2vw;
+  }
+}
+.footerContents {
+  display: flex;
+  @include winSizeM {
+    width: 100%;
+    justify-content: space-between;
+  }
+  @include winSizeS {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footerBlock01 {
+  @include winSizeS {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footerTitle {
+  font-weight: bold;
+}
+.footerSNS {
+  display: flex;
+  gap: 0.5rem;
+  padding-block: 0.5rem;
+}
+.footerSNSItem {
+  width: 1.5rem;
+}
+.footerNavi {
+  display: flex;
+  gap: 1rem;
+  @include winSizeS {
+    flex-direction: column;
+    align-items: center;
+    padding-block: 1rem 2rem;
+  }
+}
+.footerNaviItem {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.footerCopy {
+  font-size: 0.6rem;
+  text-align: center;
+}
+
+.btn {
+  display: block;
+  padding: 0.8rem 1rem;
+  border-radius: 4px;
+  background-color: $accentColor;
+  color: $white;
+  text-align: center;
+  line-height: 1;
+  @include winSizeM {
+    margin-left: 0.5rem;
+  }
+  @include winSizeS {
+    margin-top: 1.75vw;
+  }
+}
