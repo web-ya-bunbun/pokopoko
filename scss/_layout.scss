@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+/*--------------------
+  layout
+--------------------*/
+/* wrapper */
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+/* inner */
+.inner {
+  @include inner();
+}
+/* header */
+.header {
+}
+/* footer */
+.footer {
+}
+/* main */
+.main {
+}
+/* section */
+.section01 {
+  @include partsMargin($margin:6.5rem);
+}
+.section02 {
+  @include partsMargin($margin:3rem);
+}
+.section03 {
+  @include partsMargin($margin:1.8rem);
+}
+/* column layout */

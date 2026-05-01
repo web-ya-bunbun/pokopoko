@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/*--------------------
+  basic
+--------------------*/
+/* font */
+html {
+  font-size: $rootFontSize;
+}
+body {
+  color: $basicFontColor;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  -webkit-text-size-adjust: none;
+}
+/* link */
+a {
+  color: $linkFontColor;
+  text-decoration: none;
+}

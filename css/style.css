@@ -1,0 +1,216 @@
+@charset "UTF-8";
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: inherit;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+:target {
+  scroll-margin-block: 5ex;
+}
+
+address {
+  font-style: inherit;
+}
+
+svg,
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+table {
+  border-color: inherit;
+  border-collapse: collapse;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none;
+  /* 1 */
+  appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit;
+  /* 2 */
+}
+
+[type='checkbox'] {
+  -webkit-appearance: checkbox;
+  appearance: checkbox;
+}
+
+[type='radio'] {
+  -webkit-appearance: radio;
+  appearance: radio;
+}
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type="button"]:disabled,
+[type="reset"]:disabled,
+[type="submit"]:disabled {
+  cursor: default;
+}
+
+textarea {
+  overflow: auto;
+}
+
+/*--------------------
+  basic
+--------------------*/
+/* font */
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #000;
+  font-family: "Zen Maru Gothic", "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", "ヒラギノ丸ゴ Pro W4", "Hiragino Maru Gothic Pro", "Meiryo UI", "メイリオ", sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  -webkit-text-size-adjust: none;
+}
+
+/* link */
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/*--------------------
+  layout
+--------------------*/
+/* wrapper */
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* inner */
+.inner {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+@media screen and (min-width: 801px) {
+  .inner {
+    max-width: 1320px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+/* header */
+/* footer */
+/* main */
+/* section */
+.section01:not(:first-child) {
+  margin-top: 6.5rem;
+}
+
+.section02:not(:first-child) {
+  margin-top: 3rem;
+}
+
+.section03:not(:first-child) {
+  margin-top: 1.8rem;
+}
+
+/* column layout */
+/*--------------------
+  module
+--------------------*/
+/*--------------------
+  toppage
+--------------------*/
+/*--------------------
+  page
+--------------------*/

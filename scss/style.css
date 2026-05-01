@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/* Web Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+/* reset */
+@import url("https://unpkg.com/destyle.css@2.0.2/destyle.css");
+/*--------------------
+  basic
+--------------------*/
+/* font */
+/* line 7, /Users/saekokokubun/Documents/websites/basic/htdocs/scss/_basic.scss */
+html {
+  font-size: 10px; }
+  @media screen and (max-width: 780px) {
+    /* line 7, /Users/saekokokubun/Documents/websites/basic/htdocs/scss/_basic.scss */
+    html {
+      font-size: 2.5vw; } }
+
+/* line 13, /Users/saekokokubun/Documents/websites/basic/htdocs/scss/_basic.scss */
+body {
+  color: #000;
+  font-family: "Noto Sans JP", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "Meiryo UI", "メイリオ", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.8;
+  -webkit-text-size-adjust: none; }
+
+/* line 20, /Users/saekokokubun/Documents/websites/basic/htdocs/scss/_basic.scss */
+_:-ms-fullscreen, :root body {
+  font-family: "Meiryo UI", "メイリオ", sans-serif;
+  /* for IE11 */ }
+
+/* link */
+/* line 24, /Users/saekokokubun/Documents/websites/basic/htdocs/scss/_basic.scss */
+a {
+  color: #000;
+  text-decoration: none; }
+
+/*--------------------
+  layout
+--------------------*/
+/* wrapper */
+/* line 7, /Users/saekokokubun/Documents/websites/basic/htdocs/scss/_layout.scss */
+.wrapper {
+  width: 100%;
+  overflow: hidden; }
+
+/* inner */
+@media screen and (min-width: 961px) {
+  /* line 12, /Users/saekokokubun/Documents/websites/basic/htdocs/scss/_layout.scss */
+  .inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px; } }
+
+@media screen and (max-width: 780px) {
+  /* line 12, /Users/saekokokubun/Documents/websites/basic/htdocs/scss/_layout.scss */
+  .inner {
+    padding-left: 4vw;
+    padding-right: 4vw; } }
+
+/* header */
+/* footer */
+/* main */
+/* bread */
+/* page title */
+/* section */
+/* line 150, /Users/saekokokubun/Documents/websites/basic/htdocs/scss/_settings.scss */
+.section01:not(:first-child) {
+  margin-top: 10rem; }
+
+/* line 150, /Users/saekokokubun/Documents/websites/basic/htdocs/scss/_settings.scss */
+.section02:not(:first-child) {
+  margin-top: 5rem; }
+
+/* line 150, /Users/saekokokubun/Documents/websites/basic/htdocs/scss/_settings.scss */
+.section03:not(:first-child) {
+  margin-top: 3rem; }
+
+/* column layout */
+/*--------------------
+  module
+--------------------*/
+/*--------------------
+  toppage
+--------------------*/
+/*--------------------
+  page
+--------------------*/
+
+/*# sourceMappingURL=style.css.map */
