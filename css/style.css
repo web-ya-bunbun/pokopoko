@@ -287,7 +287,15 @@ a {
     justify-content: center;
     align-items: center;
     background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
   }
+}
+
+.menuCtrl:has(input[type="checkbox"]:checked) + .gnav {
+  visibility: visible;
+  opacity: 1;
 }
 
 .gnavList {
