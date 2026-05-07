@@ -55,6 +55,16 @@ $spPadding: 4vw;
     @content;
   }
 }
+@mixin winLandscape {
+  @media screen and (orientation: landscape) {
+    @content;
+  }
+}
+@mixin winPortrait {
+  @media screen and (orientation: portrait) {
+    @content;
+  }
+}
 
 //clearfix
 @mixin clearfix() {

@@ -9,12 +9,12 @@
   background-color: $baseColor;
   background-image: url(/img/nikukyu_bg.svg);
   background-repeat: no-repeat;
-  @include winSizeM {
+  @include winLandscape {
     height: calc(100dvh - 100px);
     background-position: 0.5vw -0.2vw;
     background-size: 40%;
   }
-  @include winSizeS {
+  @include winPortrait {
     height: calc(100dvh - 20vw);
     background-position: center 60%;
     background-size: 80%;
@@ -26,13 +26,13 @@
   flex-direction: column;
   align-items: flex-end;
   gap: 2vw;
-  @include winSizeM {
+  @include winLandscape {
     left: 4vw;
-    top: 10vh;
+    top: 7vh;
   }
-  @include winSizeS {
+  @include winPortrait {
     left: 50%;
-    top: 38vh;
+    top: 35vh;
     transform: translateX(-50%);
   }
 }
@@ -40,18 +40,18 @@
   font-weight: bold;
   letter-spacing: 0.1em;
   white-space: nowrap;
-  @include winSizeM {
+  @include winLandscape {
     font-size: 2vw;
   }
-  @include winSizeS {
+  @include winPortrait {
     font-size: 4vw;
   }
 }
 .topKV__btn {
-  @include winSizeM {
+  @include winLandscape {
     font-size: 2vw;
   }
-  @include winSizeS {
+  @include winPortrait {
     font-size: 4vw;
   }
 }
@@ -59,12 +59,12 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: min(50vw, 830px);
+  width: min(57vw, 830px);
   > svg {
     width: 100%;
     height: auto;
   }
-  @include winSizeS {
+  @include winPortrait {
     height: 35vh;
     width: auto;
     > svg {
@@ -92,7 +92,7 @@
     width: 100%;
     height: auto;
   }
-  @include winSizeS {
+  @include winPortrait {
     height: 25vh;
     width: auto;
     > svg {
@@ -116,12 +116,12 @@
   bottom: 0;
   left: 50%;
   height: auto;
-  @include winSizeM {
+  @include winLandscape {
     width: min(12vw, 150px);
     transform: translateX(-50%);
   }
-  @include winSizeS {
-    width: 40vw;
+  @include winPortrait {
+    width: min(40vw, 200px);
   }
   > img {
     width: 100%;
@@ -129,7 +129,7 @@
 }
 .topKV__CTA {
   position: absolute;
-  @include winSizeM {
+  @include winLandscape {
     bottom: 3vw;
     right: 3vw;
     width: min(12.5vw, 160px);
@@ -138,7 +138,7 @@
       font-size: min(1.5vw, 1.2rem);
     }
   }
-  @include winSizeS {
+  @include winPortrait {
     top: 55vh;
     left: 25vw;
     width: 25vw;

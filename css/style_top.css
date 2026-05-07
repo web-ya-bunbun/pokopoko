@@ -399,14 +399,14 @@ a {
   background-image: url(/img/nikukyu_bg.svg);
   background-repeat: no-repeat;
 }
-@media screen and (min-width: 901px) {
+@media screen and (orientation: landscape) {
   .topKV {
     height: calc(100dvh - 100px);
     background-position: 0.5vw -0.2vw;
     background-size: 40%;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (orientation: portrait) {
   .topKV {
     height: calc(100dvh - 20vw);
     background-position: center 60%;
@@ -421,16 +421,16 @@ a {
   align-items: flex-end;
   gap: 2vw;
 }
-@media screen and (min-width: 901px) {
+@media screen and (orientation: landscape) {
   .topKV__box {
     left: 4vw;
-    top: 10vh;
+    top: 7vh;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (orientation: portrait) {
   .topKV__box {
     left: 50%;
-    top: 38vh;
+    top: 35vh;
     transform: translateX(-50%);
   }
 }
@@ -440,23 +440,23 @@ a {
   letter-spacing: 0.1em;
   white-space: nowrap;
 }
-@media screen and (min-width: 901px) {
+@media screen and (orientation: landscape) {
   .topKV__lead {
     font-size: 2vw;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (orientation: portrait) {
   .topKV__lead {
     font-size: 4vw;
   }
 }
 
-@media screen and (min-width: 901px) {
+@media screen and (orientation: landscape) {
   .topKV__btn {
     font-size: 2vw;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (orientation: portrait) {
   .topKV__btn {
     font-size: 4vw;
   }
@@ -466,13 +466,13 @@ a {
   position: absolute;
   top: 0;
   right: 0;
-  width: min(50vw, 830px);
+  width: min(57vw, 830px);
 }
 .topKV__img01 > svg {
   width: 100%;
   height: auto;
 }
-@media screen and (max-width: 900px) {
+@media screen and (orientation: portrait) {
   .topKV__img01 {
     height: 35vh;
     width: auto;
@@ -505,7 +505,7 @@ a {
   width: 100%;
   height: auto;
 }
-@media screen and (max-width: 900px) {
+@media screen and (orientation: portrait) {
   .topKV__img02 {
     height: 25vh;
     width: auto;
@@ -534,15 +534,15 @@ a {
   left: 50%;
   height: auto;
 }
-@media screen and (min-width: 901px) {
+@media screen and (orientation: landscape) {
   .topKV__scroll {
     width: min(12vw, 150px);
     transform: translateX(-50%);
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (orientation: portrait) {
   .topKV__scroll {
-    width: 40vw;
+    width: min(40vw, 200px);
   }
 }
 .topKV__scroll > img {
@@ -552,7 +552,7 @@ a {
 .topKV__CTA {
   position: absolute;
 }
-@media screen and (min-width: 901px) {
+@media screen and (orientation: landscape) {
   .topKV__CTA {
     bottom: 3vw;
     right: 3vw;
@@ -563,7 +563,7 @@ a {
     font-size: min(1.5vw, 1.2rem);
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (orientation: portrait) {
   .topKV__CTA {
     top: 55vh;
     left: 25vw;
