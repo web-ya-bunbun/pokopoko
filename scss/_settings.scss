@@ -77,9 +77,7 @@ $spPadding: 4vw;
 
 //inner
 @mixin inner() {
-  display: flex;
-  justify-content: center;
-  align-items: start;
+  margin-inline: auto;
   padding-left: $spPadding;
   padding-right: $spPadding;
   @include winSizeM {

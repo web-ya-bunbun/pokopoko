@@ -158,7 +158,6 @@
     font-weight: bold;
     line-height: 1.5;
     position: relative;
-    z-index: 1;
   }
   &::before {
     content: '';
@@ -170,5 +169,61 @@
     height: 100%;
     border-radius: 50%;
     background-color: $subColor;
+  }
+}
+.secAbout {
+  background-color: $white;
+}
+.secAbout__box {
+  display: flex;
+  gap: 2.5rem;
+  width: 100%;
+  margin-bottom: 2.5rem;
+  @include winPortrait {
+    flex-direction: column;
+  }
+}
+.secAbout__txt {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.secAbout__img {
+  flex: 1;
+  > img {
+    width: 100%;
+    border-radius: 8px;
+  }
+}
+.secAbout__3points {
+  display: flex;
+  gap: 2rem;
+  @include winSizeS {
+    flex-direction: column;
+  }
+}
+.secAbout__3pointsBox {
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: $baseColor;
+}
+.secAbout__3pointsIcon {
+  display: flex;
+  justify-content: center;
+  > img {
+    width: 45px;
+    height: auto;
+  }
+}
+.secAbout__3pointsTitle {
+  padding-block: 1rem;
+  text-align: center;
+}
+.secAbout__3pointsTxt {
+  @include winSizeS {
+    font-size: min(2.7vw, 1rem);
+    text-align: center;
   }
 }
