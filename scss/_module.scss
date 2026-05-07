@@ -79,10 +79,10 @@
     background-color: $white;
     visibility: hidden;
     opacity: 0;
-    transition: all .3s;
+    transition: all 0.3s;
   }
 }
-.menuCtrl:has(input[type="checkbox"]:checked) + .gnav {
+.menuCtrl:has(input[type='checkbox']:checked) + .gnav {
   visibility: visible;
   opacity: 1;
 }
@@ -104,6 +104,23 @@
   color: $linkFontColor;
   font-weight: bold;
 }
+.gnavItem__btn {
+  @include winSizeM {
+    margin-left: 0.5rem;
+  }
+  @include winSizeS {
+    margin-top: 1.75vw;
+  }
+}
+
+.main {
+  @include winSizeM {
+    padding-bottom: 105px;
+  }
+  @include winSizeS {
+    padding-bottom: 332px;
+  }
+}
 
 .footer {
   position: absolute;
@@ -116,9 +133,6 @@
   background-color: $white;
   @include winSizeM {
     align-items: center;
-  }
-  @include winSizeS {
-    padding: 2vw;
   }
 }
 .footerContents {
@@ -174,12 +188,7 @@
   border-radius: 4px;
   background-color: $accentColor;
   color: $white;
+  font-weight: bold;
   text-align: center;
   line-height: 1;
-  @include winSizeM {
-    margin-left: 0.5rem;
-  }
-  @include winSizeS {
-    margin-top: 1.75vw;
-  }
 }

@@ -8,10 +8,10 @@
   <meta name="description" content="猫カフェ　ぽこぽこの公式サイトです" />
   <meta name="robots" content="noindex, nofollow" />
   <title>保護猫カフェ　ぽこぽこ</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style_top.css" />
 </head>
 
 <body>
@@ -37,18 +37,91 @@
         <li class="gnavItem"><a href="#">料金・メニュー</a></li>
         <li class="gnavItem"><a href="#">お知らせ</a></li>
         <li class="gnavItem"><a href="#">お店情報</a></li>
-        <li class="gnavItem"><a href="#" class="btn">ご予約</a></li>
+        <li class="gnavItem">
+          <a href="#" class="gnavItem__btn btn">ご予約</a>
+        </li>
       </ul>
     </nav>
   </header>
+
+  <main class="main">
+    <section class="topKV">
+      <div class="topKV__img01">
+        <svg viewBox="0 0 829 728" class="topKV__shap01">
+          <path
+            d="M28.7477 503.232C133.817 779.155 551.433 760.718 787.529 656.827C801.556 650.654 815.179 643.779 828.374 636.26V0H147.374C24.0432 131.782 -41.4188 318.969 28.7477 503.232Z"
+            fill="#FFD9B3" />
+        </svg>
+        <svg viewBox="0 0 829 728" class="topKV__imgClip01">
+          <image xlink:href="/img/KV_img01.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"
+            clip-path="url(#clip01)" />
+        </svg>
+        <svg viewBox="0 0 829 728">
+          <clipPath id="clip01">
+            <path
+              d="M28.7477 503.232C133.817 779.155 551.433 760.718 787.529 656.827C801.556 650.654 815.179 643.779 828.374 636.26V0H147.374C24.0432 131.782 -41.4188 318.969 28.7477 503.232Z"
+              fill="#FFD9B3" />
+          </clipPath>
+        </svg>
+      </div>
+      <div class="topKV__img02">
+        <svg viewBox="0 0 570 533" class="topKV__shap02">
+          <path
+            d="M570 316.5C570 141.702 422.03 0 239.5 0C145.247 0 60.2083 37.7834 0 98.3967V533H480.582C536.037 476.392 570 400.244 570 316.5Z"
+            fill="#FFD9B3" />
+        </svg>
+        <svg viewBox="0 0 570 533" class="topKV__imgClip02">
+          <image xlink:href="/img/KV_img02.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"
+            clip-path="url(#clip02)" />
+        </svg>
+        <svg viewBox="0 0 570 533">
+          <clipPath id="clip02">
+            <path
+            d="M570 316.5C570 141.702 422.03 0 239.5 0C145.247 0 60.2083 37.7834 0 98.3967V533H480.582C536.037 476.392 570 400.244 570 316.5Z"
+            fill="#FFD9B3" />
+          </clipPath>
+        </svg>
+      </div>
+            <div class="topKV__box">
+        <p class="topKV__lead">
+          個性豊かな猫ちゃんたちと
+          <br />
+          特別なひとときを過ごしませんか？
+        </p>
+        <a href="" class="topKV__btn btn">カフェを予約する</a>
+      </div>
+      <div class="topKV__CTA">
+        <a href="#" class="topKV__CTATxt">
+          保護猫の譲渡
+          <br />
+          ご希望の方は
+          <br />
+          こちら
+        </a>
+      </div>
+
+      <div class="topKV__scroll">
+        <img src="/img/scroll.svg" alt="スクロールしてニャ" />
+      </div>
+    </section>
+  </main>
+
   <footer class="footer">
     <div class="footerContents">
       <div class="footerBlock01">
         <div class="footerTitle"><a href="/">保護猫カフェ　ぽこぽこ</a></div>
         <ul class="footerSNS">
-          <li class="footerSNSItem"><a href=""><img src="/img/Icon_facebook.svg" alt="Facebook"></a></li>
-          <li class="footerSNSItem"><a href=""><img src="/img/Icon_instagram.svg" alt="Instagram"></a></li>
-          <li class="footerSNSItem"><a href=""><img src="/img/Icon_youtube.svg" alt="Youtube"></a></li>
+          <li class="footerSNSItem">
+            <a href=""><img src="/img/Icon_facebook.svg" alt="Facebook" /></a>
+          </li>
+          <li class="footerSNSItem">
+            <a href="">
+              <img src="/img/Icon_instagram.svg" alt="Instagram" />
+            </a>
+          </li>
+          <li class="footerSNSItem">
+            <a href=""><img src="/img/Icon_youtube.svg" alt="Youtube" /></a>
+          </li>
         </ul>
       </div>
       <ul class="footerNavi">
@@ -56,11 +129,12 @@
         <li class="footerNaviItem"><a href="">料金・メニュー</a></li>
         <li class="footerNaviItem"><a href="">お知らせ</a></li>
         <li class="footerNaviItem"><a href="">お店情報</a></li>
-        <li class="footerNaviItem"><a href="">ご予約・お問い合わせ
-          </a></li>
+        <li class="footerNaviItem"><a href="">ご予約・お問い合わせ</a></li>
       </ul>
     </div>
-    <div class="footerCopy">&copy; 2026 保護猫カフェ ぽこぽこ. All rights reserved.</div>
+    <div class="footerCopy">
+      &copy; 2026 保護猫カフェ ぽこぽこ. All rights reserved.
+    </div>
   </footer>
 </body>
 

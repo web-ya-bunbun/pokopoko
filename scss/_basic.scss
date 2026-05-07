@@ -13,6 +13,7 @@ body {
   font-size: $fontSize;
   line-height: $lineHeight;
   -webkit-text-size-adjust: none;
+  position: relative;
 }
 /* link */
 a {

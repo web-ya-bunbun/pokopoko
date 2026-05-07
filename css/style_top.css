@@ -163,48 +163,6 @@ a {
 }
 
 /*--------------------
-  layout
---------------------*/
-/* wrapper */
-.wrapper {
-  width: 100%;
-  overflow: hidden;
-}
-
-/* inner */
-.inner {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  padding-left: 4vw;
-  padding-right: 4vw;
-}
-@media screen and (min-width: 901px) {
-  .inner {
-    max-width: 1440px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
-
-/* header */
-/* footer */
-/* main */
-/* section */
-.section01:not(:first-child) {
-  margin-top: 6.5rem;
-}
-
-.section02:not(:first-child) {
-  margin-top: 3rem;
-}
-
-.section03:not(:first-child) {
-  margin-top: 1.8rem;
-}
-
-/* column layout */
-/*--------------------
   module
 --------------------*/
 .header {
@@ -432,5 +390,211 @@ a {
 }
 
 /*--------------------
-  page
+  toppage
 --------------------*/
+.topKV {
+  position: relative;
+  width: 100%;
+  background-color: #F8F5EE;
+  background-image: url(/img/nikukyu_bg.svg);
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 901px) {
+  .topKV {
+    height: calc(100dvh - 100px);
+    background-position: 0.5vw -0.2vw;
+    background-size: 40%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .topKV {
+    height: calc(100dvh - 20vw);
+    background-position: center 60%;
+    background-size: 80%;
+  }
+}
+
+.topKV__box {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2vw;
+}
+@media screen and (min-width: 901px) {
+  .topKV__box {
+    left: 4vw;
+    top: 10vh;
+  }
+}
+@media screen and (max-width: 900px) {
+  .topKV__box {
+    left: 50%;
+    top: 38vh;
+    transform: translateX(-50%);
+  }
+}
+
+.topKV__lead {
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+@media screen and (min-width: 901px) {
+  .topKV__lead {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  .topKV__lead {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .topKV__btn {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  .topKV__btn {
+    font-size: 4vw;
+  }
+}
+
+.topKV__img01 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: min(50vw, 830px);
+}
+.topKV__img01 > svg {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 900px) {
+  .topKV__img01 {
+    height: 35vh;
+    width: auto;
+  }
+  .topKV__img01 > svg {
+    height: 100%;
+    width: auto;
+  }
+}
+
+.topKV__shap01 {
+  position: absolute;
+  top: 3%;
+  right: 0;
+}
+
+.topKV__imgClip01 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.topKV__img02 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: min(38vw, 570px);
+}
+.topKV__img02 > svg {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 900px) {
+  .topKV__img02 {
+    height: 25vh;
+    width: auto;
+  }
+  .topKV__img02 > svg {
+    height: 100%;
+    width: auto;
+  }
+}
+
+.topKV__shap02 {
+  position: absolute;
+  bottom: 2%;
+  left: 2%;
+}
+
+.topKV__imgClip02 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.topKV__scroll {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: auto;
+}
+@media screen and (min-width: 901px) {
+  .topKV__scroll {
+    width: min(12vw, 150px);
+    transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 900px) {
+  .topKV__scroll {
+    width: 40vw;
+  }
+}
+.topKV__scroll > img {
+  width: 100%;
+}
+
+.topKV__CTA {
+  position: absolute;
+}
+@media screen and (min-width: 901px) {
+  .topKV__CTA {
+    bottom: 3vw;
+    right: 3vw;
+    width: min(12.5vw, 160px);
+    height: min(12.5vw, 160px);
+  }
+  .topKV__CTA > a {
+    font-size: min(1.5vw, 1.2rem);
+  }
+}
+@media screen and (max-width: 900px) {
+  .topKV__CTA {
+    top: 55vh;
+    left: 25vw;
+    width: 25vw;
+    font-size: 3vw;
+  }
+}
+.topKV__CTA > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: #FF840A;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1.5;
+  position: relative;
+  z-index: 1;
+}
+.topKV__CTA::before {
+  content: '';
+  position: absolute;
+  left: -5%;
+  bottom: -5%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #FFD9B3;
+}
