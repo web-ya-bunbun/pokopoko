@@ -418,7 +418,7 @@ a {
   text-align: center;
 }
 
-.btn {
+.btn, .btn--type2 {
   display: block;
   padding: 0.8rem 1rem;
   border-radius: 4px;
@@ -427,6 +427,27 @@ a {
   font-weight: bold;
   text-align: center;
   line-height: 1;
+}
+
+.btn--type2 {
+  position: relative;
+  padding-right: 3rem;
+}
+.btn--type2::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0.75rem;
+  transform: translateY(-50%);
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url(/img/nikukyu_btn.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.section {
+  padding-bottom: 5rem;
 }
 
 .secTitle {

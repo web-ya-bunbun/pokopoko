@@ -192,6 +192,27 @@
   text-align: center;
   line-height: 1;
 }
+.btn--type2 {
+  @extend .btn;
+  position: relative;
+  padding-right: 3rem;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0.75rem;
+    transform: translateY(-50%);
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url(/img/nikukyu_btn.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.section {
+  padding-bottom: 5rem;
+}
 
 .secTitle {
   padding-block: 3.75rem;
