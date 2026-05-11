@@ -123,13 +123,16 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 10px;
   background-color: $white;
   @include winSizeM {
     position: absolute;
     left: 0;
     bottom: 0;
     align-items: center;
+    padding: 10px;
+  }
+  @include winSizeS {
+    padding: $spPadding;
   }
 }
 .footerContents {

@@ -341,7 +341,6 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 10px;
   background-color: #fff;
 }
 @media screen and (min-width: 901px) {
@@ -350,6 +349,12 @@ a {
     left: 0;
     bottom: 0;
     align-items: center;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .footer {
+    padding: 5vw;
   }
 }
 
