@@ -3,9 +3,9 @@
 /*--------------------
   basic
 --------------------*/
-/* font */
 html {
   font-size: $rootFontSize;
+  scroll-behavior: smooth;
 }
 body {
   color: $basicFontColor;
