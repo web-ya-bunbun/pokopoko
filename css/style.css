@@ -423,6 +423,25 @@ a {
   text-align: center;
 }
 
+.pageTop {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+@media screen and (min-width: 901px) {
+  .pageTop {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .pageTop {
+    width: 25vw;
+  }
+}
+.pageTop > img {
+  width: 100%;
+}
+
 .btn, .btn--type2, .btn--type2--color2 {
   display: block;
   padding: 0.8em 1em;

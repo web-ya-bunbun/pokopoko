@@ -185,6 +185,21 @@
   text-align: center;
 }
 
+.pageTop {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  @include winSizeM {
+    width: 120px;
+  }
+  @include winSizeS {
+    width: 25vw;
+  }
+  > img {
+    width: 100%;
+  }
+}
+
 .btn {
   display: block;
   padding: 0.8em 1em;
