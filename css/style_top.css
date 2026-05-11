@@ -296,16 +296,8 @@ a {
     padding-bottom: 105px;
   }
 }
-@media screen and (max-width: 900px) {
-  .main {
-    padding-bottom: 332px;
-  }
-}
 
 .footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -314,6 +306,9 @@ a {
 }
 @media screen and (min-width: 901px) {
   .footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
     align-items: center;
   }
 }
@@ -344,6 +339,11 @@ a {
 
 .footerTitle {
   font-weight: bold;
+}
+@media screen and (max-width: 900px) {
+  .footerTitle {
+    padding-block: 1em;
+  }
 }
 
 .footerSNS {

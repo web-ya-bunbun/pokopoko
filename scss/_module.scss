@@ -117,21 +117,18 @@
   @include winSizeM {
     padding-bottom: 105px;
   }
-  @include winSizeS {
-    padding-bottom: 332px;
-  }
 }
 
 .footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
   display: flex;
   flex-direction: column;
   width: 100%;
   padding: 10px;
   background-color: $white;
   @include winSizeM {
+    position: absolute;
+    left: 0;
+    bottom: 0;
     align-items: center;
   }
 }
@@ -155,6 +152,9 @@
 }
 .footerTitle {
   font-weight: bold;
+  @include winSizeS {
+    padding-block: 1em;
+  }
 }
 .footerSNS {
   display: flex;
