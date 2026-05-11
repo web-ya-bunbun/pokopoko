@@ -1,3 +1,4 @@
+//カルーセル
 if (document.querySelector('.splide')) {
   new Splide('.splide', {
     type: 'loop',
@@ -17,3 +18,19 @@ if (document.querySelector('.splide')) {
     },
   }).mount();
 }
+
+//ページトップ
+(function () {
+  window.addEventListener('scroll', () => {
+    const winH = window.innerHeight;
+    const header = document.querySelector('.header');
+    const headerH = header.clientHeight;
+    const pageTop = document.querySelector('.pageTop');
+    const scrollY = window.scrollY;
+    if (scrollY > winH - headerH) {
+      pageTop.classList.add('is-show');
+    } else {
+      pageTop.classList.remove('is-show');
+    }
+  });
+})();

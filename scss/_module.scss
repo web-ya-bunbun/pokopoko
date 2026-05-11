@@ -170,6 +170,9 @@
 .footerNavi {
   display: flex;
   gap: 1rem;
+  @include winSizeM {
+    padding-right: 100px;
+  }
   @include winSizeS {
     flex-direction: column;
     align-items: center;
@@ -189,14 +192,21 @@
   position: fixed;
   right: 0;
   bottom: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: .2s;
   @include winSizeM {
     width: 120px;
   }
   @include winSizeS {
-    width: 25vw;
+    width: 20vw;
   }
   > img {
     width: 100%;
+  }
+  &.is-show {
+    visibility: visible;
+    opacity: 1;
   }
 }
 

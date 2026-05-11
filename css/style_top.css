@@ -365,6 +365,11 @@ a {
   display: flex;
   gap: 1rem;
 }
+@media screen and (min-width: 901px) {
+  .footerNavi {
+    padding-right: 100px;
+  }
+}
 @media screen and (max-width: 900px) {
   .footerNavi {
     flex-direction: column;
@@ -387,6 +392,9 @@ a {
   position: fixed;
   right: 0;
   bottom: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: .2s;
 }
 @media screen and (min-width: 901px) {
   .pageTop {
@@ -395,11 +403,15 @@ a {
 }
 @media screen and (max-width: 900px) {
   .pageTop {
-    width: 25vw;
+    width: 20vw;
   }
 }
 .pageTop > img {
   width: 100%;
+}
+.pageTop.is-show {
+  visibility: visible;
+  opacity: 1;
 }
 
 .btn, .btn--type2, .btn--type2--color2 {
