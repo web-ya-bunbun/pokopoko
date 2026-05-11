@@ -378,9 +378,9 @@ a {
   text-align: center;
 }
 
-.btn, .btn--type2 {
+.btn, .btn--type2, .btn--type2--color2 {
   display: block;
-  padding: 0.8rem 1rem;
+  padding: 0.8em 1em;
   border-radius: 4px;
   background-color: #FF840A;
   color: #fff;
@@ -389,11 +389,12 @@ a {
   line-height: 1;
 }
 
-.btn--type2 {
+.btn--type2, .btn--type2--color2 {
+  padding: 1.5em;
   position: relative;
   padding-right: 3rem;
 }
-.btn--type2::after {
+.btn--type2::after, .btn--type2--color2::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -406,8 +407,12 @@ a {
   background-repeat: no-repeat;
 }
 
+.btn--type2--color2 {
+  background-color: #310707;
+}
+
 .section {
-  padding-bottom: 5rem;
+  padding-bottom: min(10vw, 3.75rem);
 }
 
 .secTitle {
@@ -416,6 +421,7 @@ a {
   font-weight: bold;
   text-align: center;
   letter-spacing: 0.02em;
+  line-height: 1.2;
 }
 
 .section__btnArea {
@@ -446,8 +452,8 @@ a {
 /* inner */
 .inner {
   margin-inline: auto;
-  padding-left: 4vw;
-  padding-right: 4vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 @media screen and (min-width: 901px) {
   .inner {
@@ -1003,4 +1009,29 @@ a {
   .secNotice__title:not(:last-child) {
     margin-bottom: 0.5em;
   }
+}
+
+.secInquiry {
+  background-color: #FFD9B3;
+}
+@media screen and (min-width: 901px) {
+  .secInquiry {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .secInquiry__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 920px;
+    margin-inline: auto;
+  }
+}
+
+.secInquiry__btnArea {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }

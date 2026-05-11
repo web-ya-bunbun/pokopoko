@@ -341,7 +341,7 @@
     margin-inline: auto;
   }
   @include winSizeS {
-    margin-inline: 5vw;
+    margin-inline: $spPadding;
   }
 }
 .secPrice__priceBox {
@@ -353,8 +353,8 @@
     padding: 2rem;
   }
   @include winSizeS {
-    margin-bottom: 5vw;
-    padding: 5vw;
+    margin-bottom: $spPadding;
+    padding: $spPadding;
   }
 }
 .secPrice__table {
@@ -385,7 +385,7 @@
     grid-column: 2 / 3;
   }
   @include winSizeS {
-    margin-bottom: 5vw;
+    margin-bottom: $spPadding;
   }
   > img {
     object-fit: cover;
@@ -400,7 +400,7 @@
     padding: 2rem;
   }
   @include winSizeS {
-    padding: 5vw;
+    padding: $spPadding;
   }
 }
 .secPrice__att {
@@ -438,8 +438,8 @@
     padding: 2rem;
   }
   @include winSizeS {
-    margin-inline: 5vw;
-    padding: 5vw;
+    margin-inline: $spPadding;
+    padding: $spPadding;
   }
 }
 .secNotice__title {
@@ -448,4 +448,24 @@
       margin-bottom: 0.5em;
     }
   }
+}
+.secInquiry {
+  background-color: $subColor;
+  @include winSizeM {
+    padding-bottom: 0;
+  }
+}
+.secInquiry__wrapper {
+  @include winSizeM {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 920px;
+    margin-inline: auto;
+  }
+}
+.secInquiry__btnArea {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }

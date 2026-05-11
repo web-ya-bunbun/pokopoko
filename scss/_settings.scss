@@ -33,7 +33,7 @@ $breakPointS: 480px;
 $pcMaxWidth: 1440px;
 $pcPadding: 30px;
 $pcPaddingL: 60px;
-$spPadding: 4vw;
+$spPadding: 5vw;
 
 @mixin winSizeL {
   @media screen and (min-width:($breakPointL+1)){

@@ -184,7 +184,7 @@
 
 .btn {
   display: block;
-  padding: 0.8rem 1rem;
+  padding: 0.8em 1em;
   border-radius: 4px;
   background-color: $accentColor;
   color: $white;
@@ -194,6 +194,7 @@
 }
 .btn--type2 {
   @extend .btn;
+  padding: 1.5em;
   position: relative;
   padding-right: 3rem;
   &::after {
@@ -209,9 +210,13 @@
     background-repeat: no-repeat;
   }
 }
+.btn--type2--color2 {
+  @extend .btn--type2;
+  background-color: $textColor;
+}
 
 .section {
-  padding-bottom: 5rem;
+  padding-bottom: min(10vw, 3.75rem);
 }
 
 .secTitle {
@@ -220,6 +225,7 @@
   font-weight: bold;
   text-align: center;
   letter-spacing: 0.02em;
+  line-height: $titleLineHeight;
 }
 .section__btnArea {
   display: flex;
