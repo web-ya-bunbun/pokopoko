@@ -451,11 +451,30 @@ a {
 }
 
 .secTitle {
-  padding-block: 3.75rem;
-  font-size: 2rem;
+  padding-block: min(10vw, 3.75rem);
+  font-size: min(8vw, 2rem);
   font-weight: bold;
   text-align: center;
   letter-spacing: 0.02em;
+}
+
+.section__btnArea {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.subTitle {
+  margin-bottom: 1em;
+  font-size: min(6vw, 1.6rem);
+  font-weight: bold;
+}
+
+.sTitle {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 /* wrapper */
