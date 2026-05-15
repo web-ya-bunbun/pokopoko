@@ -3,3 +3,49 @@
 /*--------------------
   page
 --------------------*/
+.pageTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.5em;
+  color: $white;
+  font-size: min(8vw, 3rem);
+  line-height: $titleLineHeight;
+  background-size: cover;
+  background-position: center center;
+}
+.breadcrumbs {
+  display: flex;
+  padding-block: 0.25rem;
+  background-color: $baseColor;
+}
+.breadcrumbs__list {
+  @include inner;
+  width: 100%;
+  display: flex;
+}
+.breadcrumbs__item {
+  position: relative;
+  font-size: min(3vw, 0.8rem);
+  &:not(:last-child) {
+    padding-right: 1em;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 0.25em;
+      transform: translateY(-50%);
+      display: block;
+      width: 1em;
+      height: 1em;
+      background-image: url(/img/arrow_r.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 50%;
+    }
+  }
+  > a {
+    display: inline-block;
+    padding-inline: 0.5em;
+  }
+}

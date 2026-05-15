@@ -7,14 +7,14 @@
   <meta name="keyword" content="猫カフェ, 猫, 保護猫, カフェ, 癒し, Cats" />
   <meta name="description" content="猫カフェ　ぽこぽこの公式サイトです" />
   <meta name="robots" content="noindex, nofollow" />
-  <title>保護猫カフェ　ぽこぽこ</title>
+  <title>カフェの猫たち ｜ 保護猫カフェ　ぽこぽこ</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style_cats.css">
 </head>
 
-<body>
+<body class="cats">
   <header class="header">
     <p class="headerLogo">
       <a href="/"><img src="/img/logo.svg" alt="" /></a>
@@ -43,7 +43,377 @@
   </header>
 
   <main class="main">
-メインコンテンツ
+    <h1 class="pageTitle">カフェの猫たち</h1>
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item"><a href="/">ホーム</a></li>
+        <li class="breadcrumbs__item">カフェの猫たち</li>
+      </ul>
+    </div>
+    <div class="catfiltering">
+      <div class="catfiltering__inner">
+        <label for="filtering" class="catfiltering__label">
+          <select name="filtering" id="filtering">
+            <option value="すべて猫ちゃん見る">すべての猫ちゃんを見る</option>
+            <optgroup label="性別">
+              <option value="オス">オス</option>
+              <option value="メス">メス</option>
+            </optgroup>
+            <optgroup label="大人・子ども">
+              <option value="子猫">子猫（1歳未満）</option>
+              <option value="大人猫">大人猫（1歳以上）</option>
+            </optgroup>
+            <optgroup label="毛色">
+              <option value="白">白</option>
+              <option value="黒">黒</option>
+              <option value="グレー">グレー</option>
+              <option value="白黒">白黒</option>
+              <option value="キジトラ">キジトラ</option>
+              <option value="サバトラ">サバトラ</option>
+              <option value="茶トラ">茶トラ</option>
+              <option value="白キジ">白キジ</option>
+              <option value="白サバ">白サバ</option>
+              <option value="白茶">白茶</option>
+              <option value="三毛">三毛</option>
+              <option value="サビ">サビ</option>
+              <option value="その他">その他</option>
+            </optgroup>
+          </select>
+        </label>
+      </div>
+    </div>
+    <ul class="catsList">
+      <li class="catsList__item">
+        <a href="#">
+          <p class="catsList__name">チャイ</p>
+          <div class="catsList__img"><img src="/img/cat_01.png" alt="チャイちゃんの画像"></div>
+          <p class="catsList__catch">いつも陽気で、食いしん坊な看板猫</p>
+          <dl class="catsList__prof">
+            <dt>性別</dt>
+            <dd>オス</dd>
+            <dt>推定年齢</dt>
+            <dd>3歳</dd>
+            <dt>毛色</dt>
+            <dd>茶トラ</dd>
+          </dl>
+        </a>
+      </li>
+      <li class="catsList__item">
+        <a href="#">
+          <p class="catsList__name">グレアム</p>
+          <div class="catsList__img"><img src="/img/cat_02.png" alt="グレアムちゃんの画像"></div>
+          <p class="catsList__catch">クールに見えて、食いしん坊な一面も</p>
+          <dl class="catsList__prof">
+            <dt>性別</dt>
+            <dd>オス</dd>
+            <dt>推定年齢</dt>
+            <dd>4歳</dd>
+            <dt>毛色</dt>
+            <dd>グレー</dd>
+          </dl>
+        </a>
+      </li>
+      <li class="catsList__item">
+        <a href="#">
+          <p class="catsList__name">クローネ</p>
+          <div class="catsList__img"><img src="/img/cat_03.png" alt="クローネちゃんの画像"></div>
+          <p class="catsList__catch">好奇心旺盛！おもちゃは絶対離さない</p>
+          <dl class="catsList__prof">
+            <dt>性別</dt>
+            <dd>メス</dd>
+            <dt>推定年齢</dt>
+            <dd>3ヶ月</dd>
+            <dt>毛色</dt>
+            <dd>黒</dd>
+          </dl>
+        </a>
+      </li>
+      <li class="catsList__item">
+        <a href="#">
+          <p class="catsList__name">ロッキー</p>
+          <div class="catsList__img"><img src="/img/cat_04.png" alt="ロッキーちゃんの画像"></div>
+          <p class="catsList__catch">大あくび！マイペースなムードメーカー</p>
+          <dl class="catsList__prof">
+            <dt>性別</dt>
+            <dd>オス</dd>
+            <dt>推定年齢</dt>
+            <dd>3歳</dd>
+            <dt>毛色</dt>
+            <dd>白キジ</dd>
+          </dl>
+        </a>
+      </li>
+      <li class="catsList__item">
+        <a href="#">
+          <p class="catsList__name">ビアンカ</p>
+          <div class="catsList__img"><img src="/img/cat_05.png" alt="ビアンカちゃんの画像"></div>
+          <p class="catsList__catch">日向ぼっこが日課の、のんびり屋さん</p>
+          <dl class="catsList__prof">
+            <dt>性別</dt>
+            <dd>メス</dd>
+            <dt>推定年齢</dt>
+            <dd>1歳</dd>
+            <dt>毛色</dt>
+            <dd>白</dd>
+          </dl>
+        </a>
+      </li>
+      <li class="catsList__item">
+        <a href="#">
+          <p class="catsList__name">のりお</p>
+          <div class="catsList__img"><img src="/img/cat_06.png" alt="のりおちゃんの画像"></div>
+          <p class="catsList__catch">凛とした表情、甘える時は全力です</p>
+          <dl class="catsList__prof">
+            <dt>性別</dt>
+            <dd>オス</dd>
+            <dt>推定年齢</dt>
+            <dd>3歳</dd>
+            <dt>毛色</dt>
+            <dd>白キジ</dd>
+          </dl>
+        </a>
+      </li>
+      <li class="catsList__item">
+        <a href="#">
+          <p class="catsList__name">チャッティ</p>
+          <div class="catsList__img"><img src="/img/cat_07.png" alt="チャッティちゃんの画像"></div>
+          <p class="catsList__catch">狙いを定めて…遊び盛りな甘えん坊</p>
+          <dl class="catsList__prof">
+            <dt>性別</dt>
+            <dd>オス</dd>
+            <dt>推定年齢</dt>
+            <dd>4ヶ月</dd>
+            <dt>毛色</dt>
+            <dd>茶トラ</dd>
+          </dl>
+        </a>
+      </li>
+      <li class="catsList__item">
+        <a href="#">
+          <p class="catsList__name">グレース</p>
+          <div class="catsList__img"><img src="/img/cat_08.png" alt="グレースちゃんの画像"></div>
+          <p class="catsList__catch">貴婦人のような、落ち着いた性格</p>
+          <dl class="catsList__prof">
+            <dt>性別</dt>
+            <dd>メス</dd>
+            <dt>推定年齢</dt>
+            <dd>1歳</dd>
+            <dt>毛色</dt>
+            <dd>グレー</dd>
+          </dl>
+        </a>
+      </li>
+      <li class="catsList__item">
+        <a href="#">
+          <p class="catsList__name">ラッキー</p>
+          <div class="catsList__img"><img src="/img/cat_09.png" alt="ラッキーちゃんの画像"></div>
+          <p class="catsList__catch">丸くなって眠る、安心しきった寝顔</p>
+          <dl class="catsList__prof">
+            <dt>性別</dt>
+            <dd>メス</dd>
+            <dt>推定年齢</dt>
+            <dd>5歳</dd>
+            <dt>毛色</dt>
+            <dd>キジトラ</dd>
+          </dl>
+        </a>
+      </li>
+      <li class="catsList__item">
+        <a href="#">
+          <p class="catsList__name">ミシェル</p>
+          <div class="catsList__img"><img src="/img/cat_10.png" alt="ミシェルちゃんの画像"></div>
+          <p class="catsList__catch">夢の中で遊んでる、お昼寝大好きっ子</p>
+          <dl class="catsList__prof">
+            <dt>性別</dt>
+            <dd>メス</dd>
+            <dt>推定年齢</dt>
+            <dd>5ヶ月</dd>
+            <dt>毛色</dt>
+            <dd>三毛</dd>
+          </dl>
+        </a>
+      </li>
+      <li class="catsList__item">
+        <a href="#">
+          <p class="catsList__name">タマ</p>
+          <div class="catsList__img"><img src="/img/cat_11.png" alt="タマちゃんの画像"></div>
+          <p class="catsList__catch">毛づくろい中。身だしなみは大切に</p>
+          <dl class="catsList__prof">
+            <dt>性別</dt>
+            <dd>オス</dd>
+            <dt>推定年齢</dt>
+            <dd>3歳</dd>
+            <dt>毛色</dt>
+            <dd>白茶</dd>
+          </dl>
+        </a>
+      </li>
+      <li class="catsList__item">
+        <a href="#">
+          <p class="catsList__name">マティ</p>
+          <div class="catsList__img"><img src="/img/cat_12.png" alt="マティちゃんの画像"></div>
+          <p class="catsList__catch">熟睡中。どんな夢を見ているのかな？</p>
+          <dl class="catsList__prof">
+            <dt>性別</dt>
+            <dd>オス</dd>
+            <dt>推定年齢</dt>
+            <dd>1歳</dd>
+            <dt>毛色</dt>
+            <dd>黒</dd>
+          </dl>
+        </a>
+      </li>
+      <li class="catsList__item">
+        <a href="#">
+          <p class="catsList__name">ミック</p>
+          <div class="catsList__img"><img src="/img/cat_13.png" alt="ミックちゃんの画像"></div>
+          <p class="catsList__catch">兄弟で一番のしっかり者、カメラ目線</p>
+          <dl class="catsList__prof">
+            <dt>性別</dt>
+            <dd>オス</dd>
+            <dt>推定年齢</dt>
+            <dd>3ヶ月</dd>
+            <dt>毛色</dt>
+            <dd>キジトラ</dd>
+          </dl>
+        </a>
+      </li>
+      <li class="catsList__item">
+        <a href="#">
+          <p class="catsList__name">ゴンタ</p>
+          <div class="catsList__img"><img src="/img/cat_14.png" alt="ゴンタちゃんの画像"></div>
+          <p class="catsList__catch">お気に入りのおもちゃと、いつも一緒</p>
+          <dl class="catsList__prof">
+            <dt>性別</dt>
+            <dd>オス</dd>
+            <dt>推定年齢</dt>
+            <dd>2歳</dd>
+            <dt>毛色</dt>
+            <dd>白茶</dd>
+          </dl>
+        </a>
+      </li>
+      <li class="catsList__item">
+        <a href="#">
+          <p class="catsList__name">ブラッキー</p>
+          <div class="catsList__img"><img src="/img/cat_15.png" alt="ブラッキーちゃんの画像"></div>
+          <p class="catsList__catch">おすまし顔の、おっとりした王子様</p>
+          <dl class="catsList__prof">
+            <dt>性別</dt>
+            <dd>オス</dd>
+            <dt>推定年齢</dt>
+            <dd>3歳</dd>
+            <dt>毛色</dt>
+            <dd>黒</dd>
+          </dl>
+        </a>
+      </li>
+      <li class="catsList__item">
+        <a href="#">
+          <p class="catsList__name">アイリン</p>
+          <div class="catsList__img"><img src="/img/cat_16.png" alt="アイリンちゃんの画像"></div>
+          <p class="catsList__catch">個性的な柄、撫でられるのが大好き</p>
+          <dl class="catsList__prof">
+            <dt>性別</dt>
+            <dd>メス</dd>
+            <dt>推定年齢</dt>
+            <dd>3歳</dd>
+            <dt>毛色</dt>
+            <dd>サビ</dd>
+          </dl>
+        </a>
+      </li>
+      <li class="catsList__item">
+        <a href="#">
+          <p class="catsList__name">リリアン</p>
+          <div class="catsList__img"><img src="/img/cat_17.png" alt="リリアンちゃんの画像"></div>
+          <p class="catsList__catch">まんまるお目目の、ちょっと慎重派</p>
+          <dl class="catsList__prof">
+            <dt>性別</dt>
+            <dd>メス</dd>
+            <dt>推定年齢</dt>
+            <dd>3ヶ月</dd>
+            <dt>毛色</dt>
+            <dd>キジトラ</dd>
+          </dl>
+        </a>
+      </li>
+      <li class="catsList__item">
+        <a href="#">
+          <p class="catsList__name">ベリンダ</p>
+          <div class="catsList__img"><img src="/img/cat_18.png" alt="ベリンダちゃんの画像"></div>
+          <p class="catsList__catch">安定のキジトラ、お昼寝場所の番人</p>
+          <dl class="catsList__prof">
+            <dt>性別</dt>
+            <dd>メス</dd>
+            <dt>推定年齢</dt>
+            <dd>5歳</dd>
+            <dt>毛色</dt>
+            <dd>キジトラ</dd>
+          </dl>
+        </a>
+      </li>
+      <li class="catsList__item">
+        <a href="#">
+          <p class="catsList__name">ハチ</p>
+          <div class="catsList__img"><img src="/img/cat_19.png" alt="ハチちゃんの画像"></div>
+          <p class="catsList__catch">じっと見つめる、おっとりした性格</p>
+          <dl class="catsList__prof">
+            <dt>性別</dt>
+            <dd>オス</dd>
+            <dt>推定年齢</dt>
+            <dd>2歳</dd>
+            <dt>毛色</dt>
+            <dd>白黒</dd>
+          </dl>
+        </a>
+      </li>
+      <li class="catsList__item">
+        <a href="#">
+          <p class="catsList__name">マロン</p>
+          <div class="catsList__img"><img src="/img/cat_20.png" alt="マロンちゃんの画像"></div>
+          <p class="catsList__catch">優雅に佇む、カフェの頼れるお姉さん</p>
+          <dl class="catsList__prof">
+            <dt>性別</dt>
+            <dd>メス</dd>
+            <dt>推定年齢</dt>
+            <dd>1歳</dd>
+            <dt>毛色</dt>
+            <dd>三毛</dd>
+          </dl>
+        </a>
+      </li>
+      <li class="catsList__item">
+        <a href="#">
+          <p class="catsList__name">ボブ</p>
+          <div class="catsList__img"><img src="/img/cat_21.png" alt="ボブちゃんの画像"></div>
+          <p class="catsList__catch">鋭い眼差し、実はとっても寂しがり屋</p>
+          <dl class="catsList__prof">
+            <dt>性別</dt>
+            <dd>オス</dd>
+            <dt>推定年齢</dt>
+            <dd>2歳</dd>
+            <dt>毛色</dt>
+            <dd>白黒</dd>
+          </dl>
+        </a>
+      </li>
+      <li class="catsList__item">
+        <a href="#">
+          <p class="catsList__name">ライナ</p>
+          <div class="catsList__img"><img src="/img/cat_22.png" alt="ライナちゃんの画像"></div>
+          <p class="catsList__catch">神秘的なオーラを纏う、マイペースさん</p>
+          <dl class="catsList__prof">
+            <dt>性別</dt>
+            <dd>メス</dd>
+            <dt>推定年齢</dt>
+            <dd>3歳</dd>
+            <dt>毛色</dt>
+            <dd>白</dd>
+          </dl>
+        </a>
+      </li>
+    </ul>
   </main>
 
   <footer class="footer">

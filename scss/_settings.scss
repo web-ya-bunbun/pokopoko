@@ -67,7 +67,7 @@ $spPadding: 5vw;
 }
 
 //clearfix
-@mixin clearfix() {
+@mixin clearfix {
   &::after {
     content: '';
     clear: both;
@@ -76,7 +76,7 @@ $spPadding: 5vw;
 }
 
 //inner
-@mixin inner() {
+@mixin inner {
   margin-inline: auto;
   padding-left: $spPadding;
   padding-right: $spPadding;
