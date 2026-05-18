@@ -655,6 +655,16 @@ a {
   }
 }
 
+.catsList__item {
+  display: block;
+  opacity: 1;
+  transition: all 0.3s;
+}
+@starting-style {
+  .catsList__item {
+    opacity: 0;
+  }
+}
 @media screen and (min-width: 901px) {
   .catsList__item {
     width: calc((100% - 4rem) / 3);
@@ -669,6 +679,10 @@ a {
   .catsList__item {
     width: 100%;
   }
+}
+.catsList__item.is-hidden {
+  display: none;
+  opacity: 0;
 }
 .catsList__item > a {
   position: relative;

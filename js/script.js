@@ -34,3 +34,29 @@ if (document.querySelector('.splide')) {
     }
   });
 })();
+
+//フィルタリング
+(function () {
+  if (document.querySelector('.catfiltering')) {
+    const item = document.querySelectorAll('.catsList__item');
+    const select = document.getElementById('filtering');
+
+    select.addEventListener('change', () => {
+      const selectVal = select.value;
+      item.forEach((elm) => {
+        const sex = elm.dataset.sex;
+        const age = elm.dataset.age;
+        const color = elm.dataset.color;
+        if (selectVal === 'all') {
+          elm.classList.remove('is-hidden');
+        } else {
+          if (selectVal !== sex && selectVal !== age && selectVal !== color) {
+            elm.classList.add('is-hidden');
+          } else {
+            elm.classList.remove('is-hidden');
+          }
+        }
+      });
+    });
+  }
+})();

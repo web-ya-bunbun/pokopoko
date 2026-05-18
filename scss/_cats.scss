@@ -70,6 +70,12 @@
   padding-block: min(10vw, 4rem);
 }
 .catsList__item {
+  display: block;
+  opacity: 1;
+  transition: all 0.3s;
+  @starting-style {
+    opacity: 0;
+  }
   @include winSizeM {
     width: calc((100% - 4rem) / 3);
   }
@@ -78,6 +84,10 @@
   }
   @include winSizeSS {
     width: 100%;
+  }
+  &.is-hidden {
+    display: none;
+    opacity: 0;
   }
   > a {
     position: relative;
