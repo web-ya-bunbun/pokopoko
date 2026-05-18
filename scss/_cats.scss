@@ -32,7 +32,7 @@
   display: inline-flex;
   align-items: center;
   position: relative;
-      font-size: min(3vw, 0.9rem);
+  font-size: min(3vw, 0.9rem);
 
   &::after {
     content: '';
@@ -112,7 +112,7 @@
   }
 }
 .catsList__img {
-  >img {
+  > img {
     aspect-ratio: 4 / 3;
     border-radius: 8px;
     min-width: 100%;
@@ -152,5 +152,97 @@
   > dd {
     width: calc(70% - 1em);
     line-height: 1;
+  }
+}
+
+.catName {
+  padding: 1em;
+  background-color: $subColor;
+  font-size: min(6vw, 2rem);
+  text-align: center;
+  line-height: $titleLineHeight;
+}
+
+.catDetail__wrapper {
+  @include inner;
+  padding-block: min(10vw, 4rem);
+}
+.catProfile {
+  position: relative;
+  display: flex;
+  border-radius: 16px;
+  background-color: $white;
+  @include winSizeM {
+    gap: $pcPadding;
+    padding: $pcPadding;
+    > * {
+      flex: 1;
+    }
+  }
+  @include winSizeS {
+    flex-direction: column;
+    gap: $spPadding;
+    padding: $spPadding;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    right: min(4vw, 1rem);
+    bottom: min(4vw, 1rem);
+    display: block;
+    width: min(22.5vw, 7.5rem);
+    aspect-ratio: 1.3 / 1;
+    background-image: url(/img/nikukyu2.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+}
+.catProfile__img {
+  > img {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+  }
+}
+.catProfile__detail {
+  position: relative;
+  z-index: 1;
+}
+.catProfile__catch {
+  margin-bottom: 1em;
+  font-size: min(5vw, 1.5rem);
+  line-height: $titleLineHeight;
+}
+.catProfile__prof {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  font-size: min(2.8vw, 0.8rem);
+  margin-bottom: 1.25em;
+  > dt {
+    width: 18%;
+    max-width: 6em;
+    padding: 0.5em;
+    border-radius: 4px;
+    background-color: $subColor;
+    color: $textColor;
+    text-align: justify;
+    text-align-last: justify;
+    line-height: 1;
+    white-space: nowrap;
+  }
+  > dd {
+    flex-grow: 1;
+    line-height: 1;
+    white-space: nowrap;
+  }
+}
+.catProfile__txt {
+  position: relative;
+  font-size: min(3.5vw, 1rem);
+  > p:not(:last-child) {
+    margin-bottom: 1em;
   }
 }
