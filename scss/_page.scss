@@ -49,3 +49,9 @@
     padding-inline: 0.5em;
   }
 }
+.subTitle {
+  color: $textColor;
+  font-size: min(4vw, 1.4rem);
+  font-weight: bold;
+  line-height: $titleLineHeight;
+}

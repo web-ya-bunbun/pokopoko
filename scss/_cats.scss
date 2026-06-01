@@ -246,3 +246,30 @@
     margin-bottom: 1em;
   }
 }
+.catPhotos {
+  margin-top: 4rem;
+}
+.catPhotos__list {
+  display: flex;
+  flex-wrap: wrap;
+  @include winSizeM {
+    gap: $pcPadding;
+  }
+  @include winSizeS {
+    gap: $spPadding;
+    flex-direction: row;
+  }
+}
+.catPhotos__item {
+  @include winSizeM {
+    flex-basis: calc((100% - (#{$pcPadding} * 2)) / 3);
+  }
+  @include winSizeS {
+    flex-basis: 100%;
+  }
+  > img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}
