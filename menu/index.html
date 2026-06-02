@@ -7,14 +7,15 @@
   <meta name="keyword" content="猫カフェ, 猫, 保護猫, カフェ, 癒し, Cats" />
   <meta name="description" content="猫カフェ　ぽこぽこの公式サイトです" />
   <meta name="robots" content="noindex, nofollow" />
-  <title>保護猫カフェ　ぽこぽこ</title>
+  <title>料金・メニュー ｜ 保護猫カフェ　ぽこぽこ</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style_menu.css">
+  <script src="/js/script.js" defer></script>
 </head>
 
-<body>
+<body class="menu">
   <header class="header">
     <p class="headerLogo">
       <a href="/"><img src="/img/logo.svg" alt="" /></a>
@@ -43,7 +44,134 @@
   </header>
 
   <main class="main">
-メインコンテンツ
+    <h1 class="pageTitle">料金・メニュー</h1>
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item"><a href="/">ホーム</a></li>
+        <li class="breadcrumbs__item">料金・メニュー</li>
+      </ul>
+    </div>
+    <div class="menuContents">
+      <div class="priceBox">
+        <h2 class="subuTitle priceBox__title">料金プラン</h2>
+        <div class="priceBox__block">
+          <div class="priceBox__plan">
+            <table class="priceBox__table">
+              <colgroup>
+                <col>
+                <col class="priceCol">
+                <col class="priceCol">
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td>平日</td>
+                  <td>土日祝</td>
+                </tr>
+                <tr>
+                  <th>30分コース</th>
+                  <td>¥600</td>
+                  <td>¥800</td>
+                </tr>
+                <tr>
+                  <th>60分コース</th>
+                  <td>¥1,100</td>
+                  <td>¥1.400</td>
+                </tr>
+                <tr>
+                  <th>90分コース</th>
+                  <td>¥1,600</td>
+                  <td>¥2,000</td>
+                </tr>
+                <tr>
+                  <th>フリータイムプラン</th>
+                  <td>¥2,200</td>
+                  <td>¥2,800</td>
+                </tr>
+                <tr>
+                  <th>延長料金（10分ごと）</th>
+                  <td>¥280</td>
+                  <td>¥350</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="priceBox__option">
+            <h3 class="sTitle">猫ちゃんのおやつオプション</h3>
+            <table class="priceBox__table">
+              <tbody>
+                <tr>
+                  <th>ペーストタイプ</th>
+                  <td>¥300</td>
+                </tr>
+                <tr>
+                  <th>カリカリタイプ</th>
+                  <td>¥400</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="priceBox__imgs">
+              <img src="/img/menu_cat01.png" alt="">
+              <img src="/img/menu_cat02.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menuBontents__img">
+        <img src="/img/food_img01.jpg" alt="">
+      </div>
+      <div class="menuBox">
+        <h2 class="subuTitle menuBox__title">フード・ドリンク</h2>
+        <h3 class="sTitle">フードメニュー</h3>
+        <ul class="menuBox__list">
+          <li class="menuBox__item">
+            <div class="menuBox__img"><img src="/img/menu_sandwich.png" alt="サンドイッチ"></div>
+            <div class="menuBox__txtBox">
+              <div class="menuBox__name">サンドイッチ</div>
+              <div class="menuBox__price">¥600</div>
+            </div>
+          </li>
+          <li class="menuBox__item">
+            <div class="menuBox__img"><img src="/img/menu_pizzatoast.png" alt="ピザトースト"></div>
+            <div class="menuBox__txtBox">
+              <div class="menuBox__name">ピザトースト</div>
+              <div class="menuBox__price">¥400</div>
+            </div>
+          </li>
+          <li class="menuBox__item">
+            <div class="menuBox__img"><img src="/img/menu_cheesecake.png" alt="日替わりケーキ"></div>
+            <div class="menuBox__txtBox">
+              <div class="menuBox__name">日替わりケーキ</div>
+              <div class="menuBox__price">¥500</div>
+            </div>
+          </li>
+        </ul>
+        <h3 class="sTitle">ドリンクメニュー</h3>
+        <ul class="menuBox__list">
+          <li class="menuBox__item">
+            <div class="menuBox__img"><img src="/img/menu_coffee.png" alt="コーヒー（HOT/ICE）"></div>
+            <div class="menuBox__txtBox">
+              <div class="menuBox__name">コーヒー（HOT/ICE）</div>
+              <div class="menuBox__price">¥400</div>
+            </div>
+          </li>
+          <li class="menuBox__item">
+            <div class="menuBox__img"><img src="/img/menu_tea.png" alt="紅茶（HOT/ICE）"></div>
+            <div class="menuBox__txtBox">
+              <div class="menuBox__name">紅茶（HOT/ICE）</div>
+              <div class="menuBox__price">¥400</div>
+            </div>
+          </li>
+          <li class="menuBox__item">
+            <div class="menuBox__img"><img src="/img/menu_orangejuice.png" alt="サンドイッチ"></div>
+            <div class="menuBox__txtBox">
+              <div class="menuBox__name">オレンジジュース</div>
+              <div class="menuBox__price">¥350</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
   </main>
 
   <footer class="footer">
@@ -67,6 +195,7 @@
     </div>
     <div class="footerCopy">&copy; 2026 保護猫カフェ ぽこぽこ. All rights reserved.</div>
   </footer>
+  <a href="#" class="pageTop"><img src="/img/pagetop.svg" alt=""></a>
 </body>
 
 </html>

@@ -603,7 +603,14 @@ a {
 
 .subTitle {
   color: #310707;
-  font-size: min(4vw, 1.4rem);
+  font-size: min(6vw, 1.4rem);
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.sTitle {
+  color: #310707;
+  font-size: min(4.5vw, 1rem);
   font-weight: bold;
   line-height: 1.2;
 }

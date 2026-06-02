@@ -257,7 +257,7 @@
   }
   @include winSizeS {
     gap: $spPadding;
-    flex-direction: row;
+    flex-direction: column;
   }
 }
 .catPhotos__item {

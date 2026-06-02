@@ -1,0 +1,126 @@
+.pageTitle {
+  background-image: url(/img/title_bg_menu.jpg);
+}
+.menuContents {
+  margin-inline: auto;
+  padding-block: min(10vw, 4rem);
+  @include winSizeM {
+    max-width: 920px;
+    padding-inline: $pcPadding;
+  }
+  @include winSizeS {
+    padding-inline: $spPadding;
+  }
+}
+.priceBox {
+  margin-bottom: min(#{$spPadding}, #{$pcPadding});
+  padding: min(#{$spPadding}, #{$pcPadding});
+  background-color: $baseColor;
+  border-radius: 8px;
+}
+.priceBox__title {
+  margin-bottom: 1em;
+}
+.priceBox__block {
+  display: flex;
+  @include winSizeM {
+    justify-content: space-between;
+    gap: $pcPadding;
+  }
+  @include winSizeS {
+    flex-direction: column;
+    gap: $spPadding;
+  }
+}
+.priceBox__plan,
+.priceBox__option {
+  @include winSizeM {
+    flex-basis: calc((100% - #{$pcPadding}) / 2);
+  }
+}
+.priceBox__table {
+  width: 100%;
+  th,
+  td {
+    padding-block: 0.25em;
+  }
+  th {
+    text-align: left;
+    font-weight: normal;
+  }
+  td {
+    text-align: center;
+  }
+  .priceCol {
+    width: 25%;
+  }
+  &:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+}
+.priceBox__imgs {
+  display: flex;
+  justify-content: center;
+  gap: min(#{$spPadding}, #{$pcPadding});
+  img {
+    width: min(28vw, 120px);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+.menuBontents__img {
+  margin-block: min(#{$spPadding}, #{$pcPadding});
+  > img {
+    aspect-ratio: 16 / 5;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}
+.menuBox {
+  margin-top: min(#{$spPadding}, #{$pcPadding});
+  padding: min(#{$spPadding}, #{$pcPadding});
+  background-color: $subColor;
+  border-radius: 8px;
+}
+.menuBox__list {
+  display: flex;
+  @include winSizeM {
+    gap: 1rem;
+  }
+  @include winSizeS {
+    flex-direction: column;
+    gap: 4vw;
+  }
+  &:not(:last-child) {
+    margin-bottom: min(#{$spPadding}, #{$pcPadding});;
+  }
+}
+.menuBox__item {
+  display: flex;
+  gap: min(4vw, 1rem);
+  background-color: $white;
+  border-radius: 8px;
+  padding: min(4vw, 1rem);
+}
+.menuBox__img {
+  flex-basis: 30%;
+  > img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+.menuBox__txtBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.5;
+}
+.menuBox__name {
+  font-size: min(3.2vw, 0.8rem);
+  font-weight: bold;
+}
+.menuBox__price {
+  font-size: min(3vw, 0.75rem);
+}
