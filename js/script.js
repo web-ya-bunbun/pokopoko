@@ -6,6 +6,7 @@ if (document.querySelector('.splide')) {
     gap: '2rem',
     padding: '1rem',
     pagination: false,
+    autoplay: true,
     breakpoints: {
       900: {
         perPage: 2,
