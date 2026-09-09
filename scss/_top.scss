@@ -7,7 +7,7 @@
   position: relative;
   width: 100%;
   background-color: $baseColor;
-  background-image: url(/img/nikukyu_bg.svg);
+  background-image: url(../img/nikukyu_bg.svg);
   background-repeat: no-repeat;
   @include winLandscape {
     height: calc(100dvh - 100px);
@@ -325,10 +325,10 @@
   background-size: cover;
   background-position: top left;
   @include winSizeM {
-    background-image: url(/img/bg_nikukyu.png);
+    background-image: url(../img/bg_nikukyu.png);
   }
   @include winSizeS {
-    background-image: url(/img/bg_nikukyu_sp.png);
+    background-image: url(../img/bg_nikukyu_sp.png);
   }
 }
 .secPrice__contents {
@@ -417,7 +417,7 @@
 }
 .secNotice {
   background-color: $baseColor;
-  background-image: url(/img/shape3.svg), url(/img/shape4.svg);
+  background-image: url(../img/shape3.svg), url(../img/shape4.svg);
   background-repeat: no-repeat;
   background-position: right top, left bottom;
   @include winSizeS {

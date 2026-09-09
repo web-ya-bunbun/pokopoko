@@ -438,7 +438,7 @@ a {
   transform: translateY(-50%);
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url(/img/nikukyu_btn.svg);
+  background-image: url(../img/nikukyu_btn.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -551,7 +551,7 @@ a {
   display: block;
   width: 1em;
   height: 1em;
-  background-image: url(/img/arrow_r.svg);
+  background-image: url(../img/arrow_r.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50%;
@@ -576,7 +576,7 @@ a {
 }
 
 .pageTitle {
-  background-image: url(/img/title_bg_menu.jpg);
+  background-image: url(../img/title_bg_menu.jpg);
 }
 
 .menuContents {

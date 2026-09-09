@@ -438,7 +438,7 @@ a {
   transform: translateY(-50%);
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url(/img/nikukyu_btn.svg);
+  background-image: url(../img/nikukyu_btn.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -506,7 +506,7 @@ a {
   position: relative;
   width: 100%;
   background-color: #F8F5EE;
-  background-image: url(/img/nikukyu_bg.svg);
+  background-image: url(../img/nikukyu_bg.svg);
   background-repeat: no-repeat;
 }
 @media screen and (orientation: landscape) {
@@ -890,12 +890,12 @@ a {
 }
 @media screen and (min-width: 901px) {
   .secPrice {
-    background-image: url(/img/bg_nikukyu.png);
+    background-image: url(../img/bg_nikukyu.png);
   }
 }
 @media screen and (max-width: 900px) {
   .secPrice {
-    background-image: url(/img/bg_nikukyu_sp.png);
+    background-image: url(../img/bg_nikukyu_sp.png);
   }
 }
 
@@ -1008,7 +1008,7 @@ a {
 
 .secNotice {
   background-color: #F8F5EE;
-  background-image: url(/img/shape3.svg), url(/img/shape4.svg);
+  background-image: url(../img/shape3.svg), url(../img/shape4.svg);
   background-repeat: no-repeat;
   background-position: right top, left bottom;
 }
