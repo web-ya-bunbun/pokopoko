@@ -551,9 +551,8 @@ a {
 }
 @media screen and (orientation: portrait) {
   .topKV__box {
-    left: 50%;
-    top: 35vh;
-    transform: translateX(-50%);
+    place-self: center;
+    inset: 0;
   }
 }
 
@@ -1111,7 +1110,11 @@ a {
 }
 .js-fadeInUp.is-inView {
   visibility: visible;
-  animation: fadeInUp .3s ease-in-out .2s 1 alternate forwards;
+  animation: fadeInUp .3s ease-in-out .1s 1 alternate forwards;
+}
+
+.topKV .js-fadeInUp.is-inView {
+  animation-delay: .3s;
 }
 
 @keyframes fadeInUp {

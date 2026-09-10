@@ -4,7 +4,14 @@
   transform: translateY(2rem);
   &.is-inView {
     visibility: visible;
-    animation: fadeInUp .3s ease-in-out .2s 1 alternate forwards;
+    animation: fadeInUp .3s ease-in-out .1s 1 alternate forwards;
+  }
+}
+.topKV {
+  .js-fadeInUp {
+    &.is-inView {
+      animation-delay: .3s;
+    }
   }
 }
 @keyframes fadeInUp {

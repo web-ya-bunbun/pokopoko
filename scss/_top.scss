@@ -32,9 +32,8 @@
     top: 7vh;
   }
   @include winPortrait {
-    left: 50%;
-    top: 35vh;
-    transform: translateX(-50%);
+    place-self: center;
+    inset: 0;
   }
 }
 .topKV__lead {
