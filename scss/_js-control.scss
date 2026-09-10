@@ -14,6 +14,33 @@
     }
   }
 }
+.topKV__img01, .topKV__img02 {
+  visibility: hidden;
+  opacity: 0;
+  &.is-show {
+    visibility: visible;
+    animation: fadeIn .5s ease-in-out 1 alternate forwards;
+  }
+}
+.topKV__img01 {
+  &.is-show {
+    animation-delay: .5s;
+  }
+}
+.topKV__img02 {
+  &.is-show {
+    animation-delay: .8s;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -30,5 +57,9 @@
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
+  }
+  .js-fadeInDelay {
+    visibility: visible;
+    opacity: 1;
   }
 }

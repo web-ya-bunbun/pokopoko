@@ -20,6 +20,13 @@ if (document.querySelector('.splide')) {
   }).mount();
 }
 
+(function () {
+  const kvItem = document.querySelectorAll('.topKV__img01, .topKV__img02');
+  kvItem.forEach((elm) => {
+    elm.classList.add('is-show');
+  });
+})();
+
 //ページトップ
 (function () {
   window.addEventListener('scroll', () => {
