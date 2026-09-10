@@ -206,7 +206,6 @@ a {
 @media screen and (max-width: 900px) {
   .menuCtrl {
     width: 15vw;
-    padding: 3vw;
     background-color: #310707;
     border-radius: 4px;
     z-index: 1;
@@ -226,6 +225,11 @@ a {
   .menuCtrl input[type='checkbox']:checked + .menuCtrlBtn .menuCtrlLine:nth-child(3) {
     transform: rotate(-45deg);
   }
+}
+
+.menuCtrlBtn {
+  display: block;
+  padding: 3vw;
 }
 
 .menuCtrlLine {

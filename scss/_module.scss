@@ -36,7 +36,6 @@
   }
   @include winSizeS {
     width: 15vw;
-    padding: 3vw;
     background-color: $textColor;
     border-radius: 4px;
     z-index: 1;
@@ -61,6 +60,10 @@
       }
     }
   }
+}
+.menuCtrlBtn {
+  display: block;
+  padding: 3vw;
 }
 .menuCtrlLine {
   fill: $white;
