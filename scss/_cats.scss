@@ -21,7 +21,7 @@
     left: 1rem;
     bottom: 0;
     width: min(16vw, 5rem);
-    height: min(16vw, 5rem);
+    height: min(16vw, 3.5rem);
     background-image: url(../img/walkingcat.svg);
     background-repeat: no-repeat;
     background-position: left bottom;
@@ -109,15 +109,27 @@
       background-repeat: no-repeat;
       background-position: right bottom;
     }
+    &:hover {
+      > .catsList__img {
+        > img {
+          transform: rotate(5deg) scale(1.2);
+        }
+      }
+    }
   }
 }
 .catsList__img {
+  aspect-ratio: 4 / 3;
+  border-radius: 8px;
+  min-width: 100%;
+  overflow: hidden;
   > img {
     aspect-ratio: 4 / 3;
     border-radius: 8px;
     min-width: 100%;
     min-height: 100%;
     object-fit: cover;
+    transition: transform .3s;
   }
 }
 .catsList__name {

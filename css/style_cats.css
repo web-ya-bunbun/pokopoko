@@ -622,7 +622,7 @@ a {
   left: 1rem;
   bottom: 0;
   width: min(16vw, 5rem);
-  height: min(16vw, 5rem);
+  height: min(16vw, 3.5rem);
   background-image: url(../img/walkingcat.svg);
   background-repeat: no-repeat;
   background-position: left bottom;
@@ -730,13 +730,23 @@ a {
   background-repeat: no-repeat;
   background-position: right bottom;
 }
+.catsList__item > a:hover > .catsList__img > img {
+  transform: rotate(5deg) scale(1.2);
+}
 
+.catsList__img {
+  aspect-ratio: 4 / 3;
+  border-radius: 8px;
+  min-width: 100%;
+  overflow: hidden;
+}
 .catsList__img > img {
   aspect-ratio: 4 / 3;
   border-radius: 8px;
   min-width: 100%;
   min-height: 100%;
   object-fit: cover;
+  transition: transform .3s;
 }
 
 .catsList__name {
@@ -919,4 +929,63 @@ a {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 8px;
+}
+
+.js-fadeInUp {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(2rem);
+}
+.js-fadeInUp.is-inView {
+  visibility: visible;
+  animation: fadeInUp .3s ease-in-out .1s 1 alternate forwards;
+}
+
+.topKV .js-fadeInUp.is-inView {
+  animation-delay: .3s;
+}
+
+.topKV__img01, .topKV__img02 {
+  visibility: hidden;
+  opacity: 0;
+}
+.topKV__img01.is-show, .topKV__img02.is-show {
+  visibility: visible;
+  animation: fadeIn .5s ease-in-out 1 alternate forwards;
+}
+
+.topKV__img01.is-show {
+  animation-delay: .5s;
+}
+
+.topKV__img02.is-show {
+  animation-delay: .8s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.no-js .js-fadeInUp {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+.no-js .js-fadeInDelay {
+  visibility: visible;
+  opacity: 1;
 }

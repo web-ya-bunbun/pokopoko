@@ -673,10 +673,10 @@ a {
   object-fit: cover;
 }
 
-.menuBontents__img {
+.menuContents__img {
   margin-block: min(5vw, 30px);
 }
-.menuBontents__img > img {
+.menuContents__img > img {
   aspect-ratio: 16 / 5;
   object-fit: cover;
   border-radius: 8px;
@@ -738,4 +738,63 @@ a {
 
 .menuBox__price {
   font-size: min(3vw, 0.75rem);
+}
+
+.js-fadeInUp {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(2rem);
+}
+.js-fadeInUp.is-inView {
+  visibility: visible;
+  animation: fadeInUp .3s ease-in-out .1s 1 alternate forwards;
+}
+
+.topKV .js-fadeInUp.is-inView {
+  animation-delay: .3s;
+}
+
+.topKV__img01, .topKV__img02 {
+  visibility: hidden;
+  opacity: 0;
+}
+.topKV__img01.is-show, .topKV__img02.is-show {
+  visibility: visible;
+  animation: fadeIn .5s ease-in-out 1 alternate forwards;
+}
+
+.topKV__img01.is-show {
+  animation-delay: .5s;
+}
+
+.topKV__img02.is-show {
+  animation-delay: .8s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.no-js .js-fadeInUp {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+.no-js .js-fadeInDelay {
+  visibility: visible;
+  opacity: 1;
 }
