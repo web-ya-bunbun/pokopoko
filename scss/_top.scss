@@ -9,6 +9,7 @@
   background-color: $baseColor;
   background-image: url(../img/nikukyu_bg.svg);
   background-repeat: no-repeat;
+  overflow: hidden;
   @include winLandscape {
     height: calc(100dvh - 100px);
     background-position: 0.5vw -0.2vw;
@@ -75,7 +76,7 @@
 }
 .topKV__shap01 {
   position: absolute;
-  top: 3%;
+  top: 22px;
   right: 0;
 }
 .topKV__imgClip01 {
@@ -158,6 +159,10 @@
     font-weight: bold;
     line-height: 1.5;
     position: relative;
+    transition: background-color .3s;
+    &:hover {
+      background-color: $textColor;
+    }
   }
   &::before {
     content: '';
@@ -246,6 +251,10 @@
     background-color: $accentColor;
     border-radius: 4px;
     aspect-ratio: 1 / 1;
+    transition: background-color .3s;
+    &:hover {
+      background-color: $textColor;
+    }
     @include winSizeM {
       width: 3rem;
       height: 3rem;
@@ -260,6 +269,7 @@
       inset: 0;
       width: 60%;
       height: auto;
+      transition: transform .3s;
     }
   }
   .splide__arrow--prev {
@@ -272,6 +282,11 @@
     > img {
       transform: rotate(-90deg);
     }
+    &:hover {
+      > img {
+        transform: translateX(-0.2rem) rotate(-90deg);
+      }
+    }
   }
   .splide__arrow--next {
     @include winSizeM {
@@ -283,11 +298,21 @@
     > img {
       transform: rotate(90deg);
     }
+    &:hover {
+      > img {
+        transform: translateX(0.2rem) rotate(90deg);
+      }
+    }
   }
 }
 .secCats__item {
   > a {
     display: block;
+    &:hover {
+      img {
+        transform: rotate(5deg);
+      }
+    }
   }
 }
 .secCats__img {
@@ -299,6 +324,7 @@
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
+    transition: transform .3s;
   }
   &::before {
     content: '';
@@ -322,13 +348,16 @@
   text-align: center;
 }
 .secPrice {
-  background-size: cover;
-  background-position: top left;
   @include winSizeM {
     background-image: url(../img/bg_nikukyu.png);
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: 30%;
   }
   @include winSizeS {
     background-image: url(../img/bg_nikukyu_sp.png);
+    background-size: cover;
+    background-position: top left;
   }
 }
 .secPrice__contents {

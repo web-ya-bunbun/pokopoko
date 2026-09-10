@@ -219,6 +219,10 @@
   font-weight: bold;
   text-align: center;
   line-height: 1;
+  transition: background-color .3s;
+  &:hover {
+    background-color: $textColor;
+  }
 }
 .btn--type2 {
   @extend .btn;
@@ -236,11 +240,20 @@
     background-image: url(../img/nikukyu_btn.svg);
     background-size: contain;
     background-repeat: no-repeat;
+    transition: right .3s;
+  }
+  &:hover {
+    &::after {
+      right: 0.5em;
+    }
   }
 }
 .btn--type2--color2 {
   @extend .btn--type2;
   background-color: $textColor;
+  &:hover {
+    background-color: $accentColor;
+  }
 }
 
 .section {

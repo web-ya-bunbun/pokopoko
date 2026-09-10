@@ -463,6 +463,10 @@ a {
   font-weight: bold;
   text-align: center;
   line-height: 1;
+  transition: background-color .3s;
+}
+.btn:hover, .btn--type2:hover, .btn--type2--color2:hover {
+  background-color: #310707;
 }
 
 .btn--type2, .btn--type2--color2 {
@@ -481,10 +485,17 @@ a {
   background-image: url(../img/nikukyu_btn.svg);
   background-size: contain;
   background-repeat: no-repeat;
+  transition: right .3s;
+}
+.btn--type2:hover::after, .btn--type2--color2:hover::after {
+  right: 0.5em;
 }
 
 .btn--type2--color2 {
   background-color: #310707;
+}
+.btn--type2--color2:hover {
+  background-color: #FF840A;
 }
 
 .section {

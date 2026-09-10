@@ -61,3 +61,41 @@ if (document.querySelector('.splide')) {
     });
   }
 })();
+
+(function () {
+  const targets = document.querySelectorAll('.js-fadeInUp');
+  const callback = (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-inView');
+        observer.unobserve(entry.target);
+      }
+    });
+  };
+  const options = {
+    root: null,
+    rootMargin: '-20% 0px',
+    threshold: 0,
+  };
+  const observer = new IntersectionObserver(callback, options);
+  if (targets) {
+    targets.forEach((target) => observer.observe(target));
+  }
+})();
+
+(function () {
+  if (window.innerWidth <= 900) {
+    return false;
+  } else {
+    window.addEventListener('scroll', () => {
+      const parallaxItem = document.querySelectorAll('.js-parallax');
+      const scrolled = window.scrollY;
+      const speed = 0.5;
+      const bgPosY = scrolled * speed;
+
+      parallaxItem.forEach((elm) => {
+        elm.style.backgroundPositionY = `${bgPosY}px`;
+      });
+    });
+  }
+})();

@@ -1,0 +1,27 @@
+.js-fadeInUp {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(2rem);
+  &.is-inView {
+    visibility: visible;
+    animation: fadeInUp .3s ease-in-out .2s 1 alternate forwards;
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.no-js {
+  .js-fadeInUp {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
